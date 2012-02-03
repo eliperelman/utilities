@@ -9,10 +9,10 @@
 	};
 	
 	// Thanks to @nathansmith for this one: https://gist.github.com/1027395
-	var parseInt = window.parseInt;
+	var parseInt = global.parseInt;
 	
 	if ( parseInt( '09' ) === 0 ) {
-		window.parseInt = function ( str, radix ) {
+		global.parseInt = function ( str, radix ) {
 			return parseInt( str, radix || 10 );
 		};
 	}
