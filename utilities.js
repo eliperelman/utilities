@@ -4,8 +4,8 @@
 		return type ===
 			// If the value is null or undefined compare directly to it:
 			value == null ?
-                '' + value :
-			    // Otherwise get the [[Class]] and compare to the relevant part of the value:
+				'' + value :
+				// Otherwise get the [[Class]] and compare to the relevant part of the value:
 				({ }).toString.call( value ).slice( 8, -1 ).toLowerCase();
 	};
 	
