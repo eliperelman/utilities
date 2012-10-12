@@ -33,5 +33,9 @@
             }, 0 );
         };
     };
+  
+    var contains = function ( source, value ) {
+    	return !!~source.indexOf( value );  
+    };
 
 })( window );
